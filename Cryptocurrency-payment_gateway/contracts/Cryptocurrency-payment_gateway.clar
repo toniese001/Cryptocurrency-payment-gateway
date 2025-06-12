@@ -168,7 +168,6 @@
           (map-set payments payment-id (merge payment-data { status: "cancelled" }))
           (ok true)))
     err-payment-not-found))
-
 ;; Refund a payment (only by merchant or contract owner)
 (define-public (refund-payment (payment-id uint))
   (match (map-get? payments payment-id)
