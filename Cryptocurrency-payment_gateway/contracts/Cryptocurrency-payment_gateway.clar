@@ -199,7 +199,6 @@
           
           (ok true)))
     err-payment-not-found))
-
 ;; Update platform fee rate (only contract owner)
 (define-public (update-fee-rate (new-rate uint))
   (begin
