@@ -218,7 +218,6 @@
         registration-id: (get registration-id merchant-data)
       })
     err-merchant-not-registered))
-
 ;; Emergency functions (only contract owner)
 (define-public (emergency-withdraw (amount uint))
   (begin
