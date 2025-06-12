@@ -155,7 +155,6 @@
           
           (ok true)))
     err-payment-not-found))
-
 ;; Cancel a payment (only by customer or contract owner)
 (define-public (cancel-payment (payment-id uint))
   (match (map-get? payments payment-id)
